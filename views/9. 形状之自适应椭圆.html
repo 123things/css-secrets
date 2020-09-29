@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>形状之自适应椭圆</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        .shape{
+            margin: 50px auto;
+            width: 200px;
+            height: 400px;
+            background: #655;
+        }
+        .shape-custom-cicle{
+            border-radius: 50% / 100% 100% 0 0;   
+        }
+        .shape-custom-cicle-2{
+            border-radius: 100% 0 0 100% / 50%;
+        }
+        .shape-custom-cicle-3{
+            border-radius: 100% 0 0 0;
+        }
+        .shape-custom-cicle-4{
+            width: 400px;
+            height: 200px;
+            border-radius: 20% 0 20% 0 /  100% 0 100% 0;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+        }
+        .btn{
+            margin: 50px auto;
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #566;
+            box-shadow: 0 8px 5px rgba(0, 0, 0, .8);
+            text-transform: capitalize;
+        }
+        .btn-button{
+            border-radius: 20px;
+        }
+        .btn-call{
+            border-radius: 50% / 100%;
+        }
+        .btn-start{
+            border-radius:120px 0 120px 0/ 100% 0 100% 0;
+        }
+        .btn-flower{
+            width: 200px;
+            border-radius: 50px 50px 10px 10px/ 100% 100% 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="shape shape-custom-cicle">
+
+    </div>
+    <div class="shape shape-custom-cicle-2"></div>
+    <div class="shape shape-custom-cicle-3"></div>
+    <div class="shape shape-custom-cicle-4"></div>
+    <div class="btn btn-button">button</div>
+    <div class="btn btn-call">call</div>
+    <div class="btn btn-start">start</div>
+    <div class="btn btn-flower">flower</div>
+</body>
+</html>
