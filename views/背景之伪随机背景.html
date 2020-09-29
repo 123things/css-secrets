@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景之伪随机背景</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        .bg-random{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            color: #fff;
+            /* background: red; */
+            background: linear-gradient(90deg, #fb3 15%, #655 0, #655 40%, #ab4 0, #ab4 65%, hsl(20, 40%, 90%) 0);
+            background-size: 80px 100%;
+        }
+        .bg-random-2{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            color: #fff;
+            background-image: 
+                            linear-gradient(90deg, #fb3 10px, transparent 0),
+                            linear-gradient(90deg, #ab4 20px,transparent 0),
+                            linear-gradient(90deg, #655 20px, transparent 0);
+            background-size: 80px 100%,  60px 100%, 40px 100%;
+        }
+        .bg-randowm-3{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            color: #fff;
+            border: 1px solid black;
+            padding: 1em;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-random">
+            dddddddhhhS
+    </div>
+    <div class="bg-random-2">
+        dddd
+    </div>
+    <div class="bg-randowm-3">
+
+    </div>
+</body>
+</html>

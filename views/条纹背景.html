@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条纹背景</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.horizontal{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            /* background: linear-gradient(#fb3, #58a); */
+            /* background: linear-gradient(#fb3 20%, #58a 80%); */
+            /* background: linear-gradient(#fb3 50%, #58a 50%); */
+            /* background: linear-gradient(#fb3 50%, #58a 0);  */
+            /* background: linear-gradient(#fb3 30%, #58a 0); */
+            background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+            background-size: 100% 30px;
+            background-repeat: no-repeat;
+            border: 1px solid red;
+        }
+        div.vertical{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(to right, #fb3 50%, #58a 0);
+            background-size: 30px 100%;
+            background-repeat: no-repeat;
+            border: 1px solid red;
+        }
+        div.linear-deg{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            color: #fff;
+            /* background: linear-gradient(45deg, #fb3 50%, #58a 0); */
+            background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-size: 42px 42px;  
+            /* background-repeat: no-repeat; */
+            border: 1px solid red; 
+        }
+        div.repeating-linear{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            color: #fff;
+            /* background: repeating-linear-gradient(45deg, #fb3, #58a 30px); */
+            background: repeating-linear-gradient(60deg, #fb3, #fb3 15px,#58a 0,#58a 30px);
+        }
+        div.repeating-linear-2{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            color: #fff;
+            border: 1px solid red;
+            background: repeating-linear-gradient(30deg, #79b, #79b 15px, #58a 0, #58a 30px);
+        }
+        div.repeating-linear-3{
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+            color: #fff;
+            border: 1px solid red;
+            
+            background: #58a;
+            background-image: 
+                repeating-linear-gradient(30deg,
+                                            hsla(0,0%, 100%, .1),
+                                            hsla(0, 0%, 100%, .1) 15px,
+                                            transparent 0,
+                                            transparent 30px);
+        }
+    </style>
+</head>
+<body>
+    <div class="horizontal">
+        横条纹背景
+    </div>
+    <div class="vertical">
+        横条纹背景
+    </div>
+    <div class="linear-deg">
+        横条纹背景(背景尺寸指定的长度决定了直角三角形的斜边长度，但条纹的宽度实际上直角三角形的高。)
+    </div>
+    <div class="linear-deg">
+        横条纹背景
+    </div>
+    <div class="repeating-linear">
+        重复
+    </div>
+    <div class="repeating-linear-2">
+        重复同色系
+    </div>
+    <div class="repeating-linear-3">
+        重复同色系2
+    </div>
+</body>
+</html>
