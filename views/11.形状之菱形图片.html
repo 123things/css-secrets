@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菱形图片</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        .title{
+            text-align: center;
+        }
+        .shape{
+            margin: 100px auto 100px;
+            width: 400px;
+            border: 1px solid red;
+            overflow: hidden;
+            font-size: 0;
+        }
+        .shape-rotate-default{
+            transform: rotate(45deg);
+        }
+        .shape-rotate-default img{
+            vertical-align: top;
+            max-width: 100%;
+            transform: rotate(-45deg) scale(1.42);
+        }
+        .shape-rotate-clip-path img{
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+            transition: 1s clip-path;   
+        }
+        .shape-rotate-clip-path img:hover{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="title">采用 roate,scale</h1>
+    <div class="shape shape-rotate-default">
+        <img src="../assets/img/shape.jpg" alt="">
+    </div>
+    <h1 class="title">采用 svg clip-path polygon()</h1>
+    <div class="shape shape-rotate-clip-path">
+        <img src="../assets/img/shape.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>形状之平行四边形</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        .shape{
+            margin: 50px auto;
+            width: 300px;
+            background: #655;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        .shape-skew-default{
+            transform: skewX(-45deg);
+        }
+        .shape-skew-default{
+            transform: skewX(-45deg);
+        }
+        .shape-skew-default > .txt{
+            transform: skewX(45deg);
+        }
+        .shap-default{
+            position: relative;
+            background-color: transparent;
+        }
+        .shap-default::before{
+           content: '';
+           display: block;
+           background-color: #58a;
+           position: absolute;
+           left : 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           z-index: -1;
+           transform: skewX(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="shape">平行四边形</div>
+    <div class="shape shape-skew-default">平行四边形</div>
+    <div class="shape shape-skew-default"><div class="txt">
+        多层标签实现 
+    </div></div>
+    <div class="shape shap-default">
+        采用伪元素实现
+    </div>
+</body>
+</html>
